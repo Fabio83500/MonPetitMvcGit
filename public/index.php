@@ -23,12 +23,12 @@ try {
         throw new Error("Le contrôleur demandé n'existe pas");
     }
 } catch (Error $ex) {
-   include(PATH_VIEW . '/errors/error.html');
+  print_r($ex->getMessage());
 } catch (AppException $ex) {
-    include(PATH_VIEW . '/errors/error.html');
+      print_r($ex->getMessage());
     MyTwig::afficheVue('errors/error.html', $error);    
 } catch (Exception $ex) {
-     include(PATH_VIEW . '/errors/error.html');
+      print_r($ex->getMessage());
 } 
 
     

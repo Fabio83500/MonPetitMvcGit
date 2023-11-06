@@ -2,7 +2,7 @@
 namespace App\Exceptions;
 
 use Exception;
-class AppException extends Exception {
+class AppExceptions extends Exception {
     const NOMUSERCONNECTE = APP_USER;
     const NOMAPPLICATION = APP_NAME;
     

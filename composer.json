@@ -7,12 +7,14 @@
             "email": "your@email.here"
         }
     ],
-    "require": {},
     "autoload":{
     "psr-4": {
         "App\\":"src",
         "Tools\\": "tools"
             
         }
+    },
+    "require": {
+        "twig/twig": "3.x-dev"
     }
 }
